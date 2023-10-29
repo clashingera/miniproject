@@ -1,0 +1,45 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(174deg, #33aaff, #334eff, #b833ff, #ff33d1);
+    background-size: 400% 400%;
+    animation: colorfulBackground 60s linear infinite;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 89%;
+    margin: 24px 80px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+table, th, td {
+    border: 1px solid #ffffff;
+}
+
+th, td {
+    padding: 19px;
+    text-align: center;
+}
+
+th {
+    background-color: #444444;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}

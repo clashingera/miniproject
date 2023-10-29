@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="/static/styles_this_month.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_this_month.css') }}">
+    <style>
+        /* Add your CSS styles here */
+    </style>
+    <!-- ... (head content) ... -->
+</head>
+
+<body>
+    <h1>This Month's Expenses</h1>
+    <table border="1">
+        <tr>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+        </tr>
+        {% for expense in expenses %}
+        <tr>
+            <td>{{ expense[1] }}</td>
+            <td>{{ expense[2] }}</td>
+            <td>{{ expense[3] }}</td>
+            <td>{{ expense[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

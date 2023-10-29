@@ -1,0 +1,73 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #33aaff, #334eff, #b833ff, #ff33d1);
+    background-size: 400% 400%;
+    animation: colorfulBackground 60s linear infinite;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0;
+    margin-left: 20px; /* Added margin from the left */
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    left: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+form {
+    background-color: #333333;
+    margin: 42px;
+    padding: 28px;
+    
+    border-radius: 17px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+button {
+    width: calc(100% - 20px);
+    background-color: #555555;
+    border: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+button:hover {
+    outline: none;
+    box-shadow: 0 0 5px #4caf50;
+    cursor: pointer;
+    background-color: #4caf50; /* Change color on hover */
+}
+
+button:active {
+    background-color: #ff5722; /* Change color on click */
+}
+
+@keyframes colorfulBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
